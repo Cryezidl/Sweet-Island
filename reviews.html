@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы - Sweet Island</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <div class="header-wrap">
+    <div class="head-top-menu">
+        <div class="info-header">
+            <div class="header-contacts">
+                <span class="header-contacts-item">
+                    <span class="header-icon-phone"></span>
+                    <span class="contact-text">0123-2222-4444</span>
+                </span>
+                <span class="header-contacts-item">
+                    <span class="header-icon-email"></span>
+                    <span class="contact-text">contact@email.com</span>
+                </span>
+            </div>
+            <div class="header-right-text">
+                <ul class="header-right-list">
+                    <li class="header-right-list-item">
+                        <a href="cart.html" class="right-list-item-link">Корзина</a>
+                    </li>
+                    <li class="header-right-list-item">
+                        <button id="theme-toggle" class="theme-toggle-btn" title="Переключить тему">
+                            <span class="theme-icon">🌙</span>
+                            <span class="theme-text">Тема</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <header id="header">
+        <img class="header-sec-img" src="./images/header-icon.png" alt="logo">
+        
+        <button class="burger-menu" id="burger-menu" aria-label="Открыть меню">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+        
+        <div class="nav-container" id="nav-container">
+            <nav id="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-list-item">
+                        <a href="index.html">ГЛАВНАЯ</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="about.html">О НАС</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="catalog.html">КАТЕГОРИИ</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="reviews.html" class="active">ОТЗЫВЫ</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="contacts.html">СВЯЗАТЬСЯ С НАМИ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    </div>
+
+   
+    <section class="reviews-hero">
+        <div class="reviews-hero-content">
+            <h1>Отзывы наших клиентов</h1>
+            <p>Мы ценим каждое мнение и постоянно работаем над улучшением нашего сервиса</p>
+        </div>
+    </section>
+
+    <section class="reviews-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">4.9</div>
+                    <div class="stat-label">Средняя оценка</div>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1,247</div>
+                    <div class="stat-label">Всего отзывов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Рекомендуют нас</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="separator">
+        <div></div>
+    </section>
+<section class="add-review-section">
+    <div class="container">
+        <h2>Оставить отзыв</h2>
+        <p class="section-subtitle">Поделитесь своими впечатлениями о покупке</p>
+        
+        <form class="review-form" id="reviewForm">
+            <div class="form-row">
+                <div class="form-group-review">
+                    <label for="userName">Ваше имя *</label>
+                    <input type="text" id="userName" name="userName" required>
+                </div>
+                <div class="form-group-review">
+                    <label for="userEmail">Email</label>
+                    <input type="email" id="userEmail" name="userEmail">
+                </div>
+            </div>
+            
+            <div class="form-group-review">
+                <label for="product">Выберите товар (необязательно)</label>
+                <select id="product" name="product">
+                    <option value="">-- Выберите товар --</option>
+                    <option value="belgian-chocolates">Бельгийские пралине</option>
+                    <option value="haribo">Мармеладные мишки Haribo</option>
+                    <option value="chupa-chups">Газированный напиток Chupa Chups</option>
+                    <option value="other">Другой товар</option>
+                </select>
+            </div>
+      
+            <div class="rating-group">
+                <label>
+                    Оценка <span class="rating-required">*</span>
+                </label>
+                <div class="rating-stars">
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" title="Ужасно">★</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" title="Плохо">★</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" title="Нормально">★</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" title="Хорошо">★</label>
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5" title="Отлично">★</label>
+                </div>
+            </div>
+            
+            <div class="form-group-review">
+                <label for="reviewTitle">Заголовок отзыва *</label>
+                <input type="text" id="reviewTitle" name="reviewTitle" required placeholder="Кратко опишите ваше впечатление">
+            </div>
+            
+            <div class="form-group-review">
+                <label for="reviewText">Текст отзыва *</label>
+                <textarea id="reviewText" name="reviewText" required placeholder="Расскажите подробнее о вашем опыте покупки..." rows="5"></textarea>
+            </div>
+            
+
+            <div class="checkbox-container">
+                <label class="checkbox-label-review">
+                    <input type="checkbox" name="recommend" checked>
+                    <span class="checkmark"></span>
+                    Я рекомендую этот магазин
+                </label>
+            </div>
+            
+            <button type="submit" class="submit-review-btn">Опубликовать отзыв</button>
+        </form>
+    </div>
+    </section>
+
+    <section class="separator">
+        <div></div>
+    </section>
+
+
+    <section class="reviews-list-section">
+        <div class="container">
+            <div class="reviews-header">
+                <h2>Последние отзывы</h2>
+                <div class="reviews-filter">
+                    <select id="sortReviews">
+                        <option value="newest">Сначала новые</option>
+                        <option value="oldest">Сначала старые</option>
+                        <option value="highest">С высоким рейтингом</option>
+                        <option value="lowest">С низким рейтингом</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="reviews-container" id="reviewsContainer">
+            </div>
+            
+            <div class="load-more-container">
+                <button class="load-more-btn" id="loadMoreBtn">Показать еще отзывы</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sweet Island</h3>
+                <p>Остров, где очень сладко</p>
+                <div class="social-links">
+                    <a href="https://vk.com/">VK</a>
+                    <a href="http://instagram.com/">Instagram</a>
+                    <a href="http://telegram.com/">Telegram</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Информация</h4>
+                <ul>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <p>📞 0123-2222-4444</p>
+                <p>✉️ contact@email.com</p>
+                <p>🕒 Ежедневно 9:00-21:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sweet Island</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" title="Наверх">↑</a>
+
+    <script src="js/theme.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/reviews.js"></script>
+</body>
+</html>

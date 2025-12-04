@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+   <div class="header-wrap">
+    <div class="head-top-menu">
+        <div class="info-header">
+            <div class="header-contacts">
+                <span class="header-contacts-item">
+                    <span class="header-icon-phone"></span>
+                    <span class="contact-text">0123-2222-4444</span>
+                </span>
+                <span class="header-contacts-item">
+                    <span class="header-icon-email"></span>
+                    <span class="contact-text">contact@email.com</span>
+                </span>
+            </div>
+            <div class="header-right-text">
+                <ul class="header-right-list">
+                    <li class="header-right-list-item">
+                        <a href="cart.html" class="right-list-item-link">Корзина</a>
+                    </li>
+                    <li class="header-right-list-item">
+                        <button id="theme-toggle" class="theme-toggle-btn" title="Переключить тему">
+                            <span class="theme-icon">🌙</span>
+                            <span class="theme-text">Тема</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <header id="header">
+        <img class="header-sec-img" src="./images/header-icon.png" alt="logo">
+        
+        <button class="burger-menu" id="burger-menu" aria-label="Открыть меню">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+        
+        <div class="nav-container" id="nav-container">
+            <nav id="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-list-item">
+                        <a href="index.html">ГЛАВНАЯ</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="about.html">О НАС</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="catalog.html">КАТЕГОРИИ</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="reviews.html">ОТЗЫВЫ</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="contacts.html" class="active">СВЯЗАТЬСЯ С НАМИ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    </div>
+
+     <section class="separator">
+        <div></div>
+    </section>
+
+    <div class="contact-us-flex">
+        <div class="contact-us-flex-contacts">
+            <p>Наши контанты</p>
+            <div class="contact-us-flex-contacts-items">
+                <div class="contact-us-flex-contacts-item">
+                    <span>📞</span>
+                    <div class="contact-us-flex-contacts-item-text">
+                        <p>Телефон</p>
+                        <i>0123-2222-4444</i>
+                    </div>
+                </div>
+                <div class="contact-us-flex-contacts-item">
+                    <span>📍</span>
+                    <div class="contact-us-flex-contacts-item-text">
+                        <p>Адрес</p>
+                        <i>г. Москва Пушкинский пр-кт д.20</i>
+                    </div>
+                </div>
+                <div class="contact-us-flex-contacts-item">
+                    <span>✉️</span>
+                    <div class="contact-us-flex-contacts-item-text">
+                        <p>Email</p>
+                        <i>contact@email.com</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-us-flex-form">
+            <p>Напишите нам</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Ваше имя</label>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" required>
+                    <label for="phone">Телефон</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group full-width">
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <label for="message">Сообщение</label>
+                </div>
+                <button type="submit" class="submit-btn">Отправить сообщение</button>
+            </form>
+        </div>
+    </div>
+
+     <section class="separator">
+        <div></div>
+    </section>
+    
+    <div class="contact-us-map">
+        <div class="map-container">
+            <h3>Мы находимся здесь</h3>
+            <div class="map-placeholder">
+                <iframe 
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Arandom&amp;source=constructor" 
+                    width="100%" 
+                    height="400" 
+                    frameborder="0"
+                    style="border-radius: 10px;"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+  
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sweet Island</h3>
+                <p>Остров, где очень сладко</p>
+                <div class="social-links">
+                    <a href="https://vk.com/">VK</a>
+                    <a href="http://instagram.com/">Instagram</a>
+                    <a href="http://telegram.com/">Telegram</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Информация</h4>
+                <ul>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <p>📞 0123-2222-4444</p>
+                <p>✉️ contact@email.com</p>
+                <p>🕒 Ежедневно 9:00-21:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sweet Island</p>
+        </div>
+    </footer>
+    <a href="#" class="back-to-top" title="Наверх">↑</a>
+    <script src="js/theme.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/contacts.js"></script>
+</body>
+</html>

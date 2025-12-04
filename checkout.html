@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа - Sweet Island</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <div class="header-wrap">
+    <div class="head-top-menu">
+        <div class="info-header">
+            <div class="header-contacts">
+                <span class="header-contacts-item">
+                    <span class="header-icon-phone"></span>
+                    <span class="contact-text">0123-2222-4444</span>
+                </span>
+                <span class="header-contacts-item">
+                    <span class="header-icon-email"></span>
+                    <span class="contact-text">contact@email.com</span>
+                </span>
+            </div>
+            <div class="header-right-text">
+                <ul class="header-right-list">
+                    <li class="header-right-list-item">
+                        <a href="cart.html" class="right-list-item-link">Корзина</a>
+                    </li>
+                    <li class="header-right-list-item">
+                        <button id="theme-toggle" class="theme-toggle-btn" title="Переключить тему">
+                            <span class="theme-icon">🌙</span>
+                            <span class="theme-text">Тема</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <header id="header">
+        <img class="header-sec-img" src="./images/header-icon.png" alt="logo">
+        
+        <button class="burger-menu" id="burger-menu" aria-label="Открыть меню">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+        
+        <div class="nav-container" id="nav-container">
+            <nav id="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-list-item">
+                        <a href="index.html">ГЛАВНАЯ</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="about.html">О НАС</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="catalog.html">КАТЕГОРИИ</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="reviews.html">ОТЗЫВЫ</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="contacts.html">СВЯЗАТЬСЯ С НАМИ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    </div>
+
+    <article class="checkout-hero">
+        <div class="checkout-hero-content">
+            <h1>Оформление заказа</h1>
+            <p>Завершите ваш заказ и получите сладости как можно скорее!</p>
+        </div>
+    </article>
+
+    <div class="checkout-page">
+        <div class="checkout-container">
+            <div class="checkout-main">
+                <form id="checkoutForm" class="checkout-form">
+                    <section class="checkout-section">
+                        <h2>👤 Данные получателя</h2>
+                        <div class="form-grid">
+                            <div class="form-group-checkout">
+                                <label for="firstName">Имя *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group-checkout">
+                                <label for="lastName">Фамилия *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                            <div class="form-group-checkout">
+                                <label for="phone">Телефон *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group-checkout">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="checkout-section">
+                        <h2>📍 Адрес доставки</h2>
+                        <div class="form-grid">
+                            <div class="form-group-checkout full-width">
+                                <label for="address">Адрес *</label>
+                                <input type="text" id="address" name="address" placeholder="Улица, дом, квартира" required>
+                            </div>
+                            <div class="form-group-checkout">
+                                <label for="city">Город *</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            <div class="form-group-checkout">
+                                <label for="postalCode">Индекс</label>
+                                <input type="text" id="postalCode" name="postalCode">
+                            </div>
+                        </div>
+                    </section>
+
+                
+                    <section class="checkout-section">
+                        <h2>🚚 Способ доставки</h2>
+                        <div class="delivery-options">
+                            <label class="option-card">
+                                <input type="radio" name="delivery" value="courier" checked>
+                                <div class="option-content">
+                                    <span class="option-title">Курьерская доставка</span>
+                                    <span class="option-price">300₽</span>
+                                    <span class="option-description">Доставка в течение 2-3 часов</span>
+                                </div>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="delivery" value="pickup">
+                                <div class="option-content">
+                                    <span class="option-title">Самовывоз</span>
+                                    <span class="option-price">Бесплатно</span>
+                                    <span class="option-description">ул. Сладкая, 123</span>
+                                </div>
+                            </label>
+                        </div>
+                    </section>
+
+                
+                    <section class="checkout-section">
+                        <h2>💳 Способ оплаты</h2>
+                        <div class="payment-options">
+                            <label class="option-card">
+                                <input type="radio" name="payment" value="card" checked>
+                                <div class="option-content">
+                                    <span class="option-title">Банковская карта</span>
+                                    <span class="option-description">Оплата онлайн</span>
+                                </div>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="payment" value="cash">
+                                <div class="option-content">
+                                    <span class="option-title">Наличными</span>
+                                    <span class="option-description">При получении</span>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="card-details" id="cardDetails">
+                            <div class="form-grid">
+                                <div class="form-group-checkout full-width">
+                                    <label for="cardNumber">Номер карты *</label>
+                                    <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+                                </div>
+                                <div class="form-group-checkout">
+                                    <label for="cardExpiry">Срок действия *</label>
+                                    <input type="text" id="cardExpiry" name="cardExpiry" placeholder="ММ/ГГ" maxlength="5">
+                                </div>
+                                <div class="form-group-checkout">
+                                    <label for="cardCVC">CVC *</label>
+                                    <input type="text" id="cardCVC" name="cardCVC" placeholder="123" maxlength="3">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="checkout-section">
+                        <h2>💬 Комментарий к заказу</h2>
+                        <div class="form-group-checkout">
+                            <textarea id="comment" name="comment" placeholder="Дополнительные пожелания к заказу..."></textarea>
+                        </div>
+                    </section>
+                </form>
+            </div>
+
+            <div class="checkout-sidebar">
+                <div class="order-summary-checkout">
+                    <h3>Ваш заказ</h3>
+                    
+                    <div class="order-items" id="orderItems">
+                    </div>
+
+                    <div class="order-totals">
+                        <div class="total-row">
+                            <span>Товары:</span>
+                            <span id="summarySubtotal">0₽</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Доставка:</span>
+                            <span id="summaryDelivery">0₽</span>
+                        </div>
+                        <div class="total-row discount">
+                            <span>Скидка:</span>
+                            <span id="summaryDiscount">-0₽</span>
+                        </div>
+                        <div class="total-row final-total">
+                            <span>Итого:</span>
+                            <span id="summaryTotal">0₽</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" form="checkoutForm" class="place-order-btn" id="placeOrderBtn">
+                        Подтвердить заказ
+                    </button>
+
+                    <div class="security-notice">
+                        <span>🔒 Ваши данные защищены</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sweet Island</h3>
+                <p>Остров, где очень сладко</p>
+                <div class="social-links">
+                    <a href="https://vk.com/">VK</a>
+                    <a href="http://instagram.com/">Instagram</a>
+                    <a href="http://telegram.com/">Telegram</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Информация</h4>
+                <ul>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <p>📞 0123-2222-4444</p>
+                <p>✉️ contact@email.com</p>
+                <p>🕒 Ежедневно 9:00-21:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sweet Island</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="successModal">
+        <div class="modal-content success-modal">
+            <div class="success-icon">🎉</div>
+            <h3>Заказ успешно оформлен!</h3>
+            <p>Спасибо за ваш заказ. Мы свяжемся с вами в ближайшее время для подтверждения.</p>
+            <p class="order-number">Номер вашего заказа: <strong id="orderNumber">#0000</strong></p>
+            <div class="modal-actions">
+                <button class="btn-primary" onclick="window.location.href='catalog.html'">
+                    Продолжить покупки
+                </button>
+                <button class="btn-secondary" onclick="window.location.href='index.html'">
+                    На главную
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/theme.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

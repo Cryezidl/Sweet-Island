@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - Sweet Island</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <div class="header-wrap">
+    <div class="head-top-menu">
+        <div class="info-header">
+            <div class="header-contacts">
+                <span class="header-contacts-item">
+                    <span class="header-icon-phone"></span>
+                    <span class="contact-text">0123-2222-4444</span>
+                </span>
+                <span class="header-contacts-item">
+                    <span class="header-icon-email"></span>
+                    <span class="contact-text">contact@email.com</span>
+                </span>
+            </div>
+            <div class="header-right-text">
+                <ul class="header-right-list">
+                    <li class="header-right-list-item">
+                        <a href="cart.html" class="right-list-item-link">Корзина</a>
+                    </li>
+                    <li class="header-right-list-item">
+                        <button id="theme-toggle" class="theme-toggle-btn" title="Переключить тему">
+                            <span class="theme-icon">🌙</span>
+                            <span class="theme-text">Тема</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <header id="header">
+        <img class="header-sec-img" src="./images/header-icon.png" alt="logo">
+        
+      
+        <button class="burger-menu" id="burger-menu" aria-label="Открыть меню">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+        
+        <div class="nav-container" id="nav-container">
+            <nav id="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-list-item">
+                        <a href="index.html">ГЛАВНАЯ</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="about.html">О НАС</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="catalog.html" class="active">КАТЕГОРИИ</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="reviews.html">ОТЗЫВЫ</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="contacts.html">СВЯЗАТЬСЯ С НАМИ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    </div>
+
+    <article class="categories-hero">
+        <div class="categories-hero-content">
+            <h1>Каталог сладостей</h1>
+            <p>Более 500 видов сладостей от мировых брендов с доставкой</p>
+        </div>
+    </article>
+
+    <div class="catalog-page">
+        <aside class="filters-sidebar">
+            <div class="filters-header">
+                <h3>Фильтры</h3>
+                <button class="clear-filters" id="clearFilters">Сбросить</button>
+            </div>
+
+            <div class="filter-group">
+                <label for="search">Поиск</label>
+                <input type="text" id="search" placeholder="Название или бренд...">
+            </div>
+
+            <div class="filter-group">
+                <label for="category">Категория</label>
+                <select id="category">
+                    <option value="all">Все категории</option>
+                    <option value="chocolate">🍫 Шоколад</option>
+                    <option value="marmelad">🐻 Мармелад</option>
+                    <option value="candies">🍬 Конфеты</option>
+                    <option value="exclusive">🌟 Эксклюзив</option>
+                    <option value="icecream">🍦 Мороженое</option>
+                    <option value="soda">🥤 Газировка</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="brand">Бренд</label>
+                <select id="brand">
+                    <option value="all">Все бренды</option>
+                   
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Цена, ₽</label>
+                <div class="price-range">
+                    <input type="number" id="priceMin" placeholder="от 0" min="0">
+                    <span>-</span>
+                    <input type="number" id="priceMax" placeholder="до 5000" min="0">
+                </div>
+            </div>
+            <div class="filter-group">
+                <label for="country">Страна производитель</label>
+                <select id="country">
+                    <option value="all">Все страны</option>
+                
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sort">Сортировка</label>
+                <select id="sort">
+                    <option value="name">По названию</option>
+                    <option value="price-asc">По цене (сначала дешевые)</option>
+                    <option value="price-desc">По цене (сначала дорогие)</option>
+                    <option value="brand">По бренду</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Дополнительно</label>
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="vegan" value="vegan">
+                        <span class="checkmark"></span>
+                        Веганские
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="sugarFree" value="sugarFree">
+                        <span class="checkmark"></span>
+                        Без сахара
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="new" value="new">
+                        <span class="checkmark"></span>
+                        Новинки
+                    </label>
+                </div>
+            </div>
+        </aside>
+
+    
+        <main class="catalog-main">
+            <div class="catalog-header">
+                <div class="results-info">
+                    <span id="resultsCount">Загрузка...</span>
+                </div>
+            </div>
+
+            <div class="products-grid" id="productsContainer">
+            </div>
+
+         
+            <div class="pagination" id="pagination">
+            </div>
+
+            
+            <div class="loading-state" id="loadingState">
+                <div class="loading-spinner"></div>
+                <p>Загружаем сладости...</p>
+            </div>
+
+           
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <h3>😔 Ничего не найдено</h3>
+                <p>Попробуйте изменить параметры фильтрации</p>
+                <button class="cta-button" onclick="clearFilters()">Сбросить фильтры</button>
+            </div>
+        </main>
+    </div>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>🛒 Ваша корзина</h3>
+            <button class="close-cart" onclick="closeCart()">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+      
+        </div>
+        <div class="cart-total">
+            <p>Итого: <span id="cartTotal">0₽</span></p>
+            <button class="checkout-btn">Оформить заказ</button>
+        </div>
+    </div>
+
+    <div class="cart-icon" onclick="toggleCart()">
+        🛒 <span class="cart-count" id="cartCount">0</span>
+    </div>
+    <div class="product-modal" id="productModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-product-info" id="modalProductInfo">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sweet Island</h3>
+                <p>Остров, где очень сладко</p>
+                <div class="social-links">
+                    <a href="https://vk.com/">VK</a>
+                    <a href="http://instagram.com/">Instagram</a>
+                    <a href="http://telegram.com/">Telegram</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Информация</h4>
+                <ul>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <p>📞 0123-2222-4444</p>
+                <p>✉️ contact@email.com</p>
+                <p>🕒 Ежедневно 9:00-21:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sweet Island</p>
+        </div>
+    </footer>
+
+    
+    <script src="js/theme.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>

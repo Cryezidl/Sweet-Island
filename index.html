@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <div class="header-wrap">
+    <div class="head-top-menu">
+        <div class="info-header">
+            <div class="header-contacts">
+                <span class="header-contacts-item">
+                    <span class="header-icon-phone"></span>
+                    <span class="contact-text">0123-2222-4444</span>
+                </span>
+                <span class="header-contacts-item">
+                    <span class="header-icon-email"></span>
+                    <span class="contact-text">contact@email.com</span>
+                </span>
+            </div>
+            <div class="header-right-text">
+                <ul class="header-right-list">
+                    <li class="header-right-list-item">
+                        <a href="cart.html" class="right-list-item-link">Корзина</a>
+                    </li>
+                    <li class="header-right-list-item">
+                        <button id="theme-toggle" class="theme-toggle-btn" title="Переключить тему">
+                            <span class="theme-icon">🌙</span>
+                            <span class="theme-text">Тема</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <header id="header">
+        <img class="header-sec-img" src="./images/header-icon.png" alt="logo">
+        
+        <button class="burger-menu" id="burger-menu" aria-label="Открыть меню">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+        
+        <div class="nav-container" id="nav-container">
+            <nav id="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-list-item">
+                        <a href="index.html" class="active">ГЛАВНАЯ</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="about.html">О НАС</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="catalog.html">КАТЕГОРИИ</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="reviews.html">ОТЗЫВЫ</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="contacts.html">СВЯЗАТЬСЯ С НАМИ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    </div>
+
+    <article class="slider">
+        <div class="slides">
+            <div class="slide"><img src="./images/chocolate.jpg" alt="Слайд 1" class="slide-img1"></div>
+            <div class="slide"><img src="./images/candies-slide.jpg" alt="Слайд 2" class="slide-img2"></div>
+            <div class="slide"><img src="./images/haribo-slide.jpg" alt="Слайд 3" class="slide-img3"></div>
+        </div>
+        <div class="slider-text">
+            <div class="slider-first-text">
+            <h1>Welcome to<br>SWEET ISLAND</h1>
+            <h3>Остров, где очень сладко</h3>
+            <span class="slider-icon-heart"></span>
+            <p>Широкий ассортимент конфет, шоколада и сладостей со всего мира</p>
+            <a href="#about">Читать дальше</a>
+        </div>      
+        </div>
+    </article>
+
+    <article id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>О нашем магазине</h2>
+                <img src="./images/small-candy.jpg" alt="Конфеты" class="about-image-float">
+                <p>Sweet Island - это рай для сладкоежек! Мы собрали самые вкусные и уникальные сладости со всего мира, чтобы вы могли наслаждаться ими каждый день.</p>
+                <p>Наша миссия - дарить радость и сладкие моменты каждому клиенту. Мы тщательно отбираем продукцию, работаем только с проверенными поставщиками и гарантируем свежесть всех товаров.</p>
+                <a href="about.html" class="about-link">Узнать больше о нас</a>
+            </div>
+            <div class="about-image">
+                <img src="./images/shop.jpg" alt="Наш магазин сладостей">
+            </div>
+            
+        </div>
+    </article>
+
+    <article class="categories">
+        <p class="categories-title">
+            Что у нас есть
+        </p>
+        <div class="categories-grid">
+            <a href="/category/chocolate">
+                <div class="categories-item">
+                    <img src="./images/chocolate-bar.png" alt="item">
+                    <p class="categories-item-name">Шоколад</p>
+                </div>
+            </a>
+            <a href="/category/marmelad">
+                <div class="categories-item">
+                    <img src="./images/category-marmelad.jpg" alt="item">
+                    <p class="categories-item-name">Мармелад и лакрица</p>
+                </div>
+            </a>
+           
+            <a href="/category/cake">
+                <div class="categories-item">
+                    <img src="./images/candies.jpg" alt="item">
+                    <p class="categories-item-name">Конфеты</p>
+                </div>
+            </a>
+            
+            <a href="/category/cupcakes">
+                <div class="categories-item">
+                    <img src="./images/abroad-sweets.jpg" alt="item">
+                    <p class="categories-item-name">Эксклюзивные сладости</p>
+                </div>
+            </a>
+            
+            <a href="/category/icecream">
+                <div class="categories-item">
+                    <img src="./images/category-icecream.jpg" alt="item">
+                    <p class="categories-item-name">Мороженое</p>
+                </div>
+            </a>
+            <a href="/category/pastry">
+                <div class="categories-item">
+                    <img src="./images/soda.jpg" alt="item">
+                    <p class="categories-item-name">Сладкая газировка</p>
+                </div>
+            </a>
+        </div>
+    </article>
+
+    <section class="separator">
+        <div></div>
+    </section>
+
+    <article class="hits">
+        <p class="hits-title">
+            Хиты недели
+        </p>
+        <div class="hits-grid">
+            <div class="hits-item">
+                <img src="./images/belgian-chocolates.jpg" alt="Бельгийские шоколадные конфеты">
+                <p class="hits-item-name">Бельгийские пралине</p>
+                <p class="hits-item-cost">890₽</p>
+                <a href="catalog.html">К товарам</a>
+            </div>
+            <div class="hits-item">
+                <img src="./images/haribo.jpg" alt="Мармеладные мишки Haribo">
+                <p class="hits-item-name">Мармеладные мишки Haribo</p>
+                <p class="hits-item-cost">270₽</p>
+                <a href="catalog.html">К товарам</a>
+            </div>
+            <div class="hits-item">
+                <img src="./images/chupa-chups-drink.png" alt="Газированный напиток Chupa Chups">
+                <p class="hits-item-name">Газированный напиток Chupa Chups</p>
+                <p class="hits-item-cost">340₽</p>
+                <a href="catalog.html">К товарам</a>
+            </div>
+        </div>
+    </article>
+
+
+    <section class="separator">
+        <div></div>
+    </section>
+
+    <article class="advantages">
+        <h2>Наши преимущества</h2>
+        <div class="advantages-grid">
+            <div class="advantage-item">
+                <div class="advantage-icon">🤝</div>
+                <h3>Надежные партнеры</h3>
+                <p>Закупаем у проверенных партнеров с безупречной репутацией</p>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-icon">🚚</div>
+                <h3>Быстрая доставка</h3>
+                <p>Доставляем заказы в день оформления по всему городу</p>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-icon">🌍</div>
+                <h3>Мировой выбор</h3>
+                <p>Широкий ассортимент от локальных и мировых брендов</p>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-icon">🎯</div>
+                <h3>Всегда свежее</h3>
+                <p>Гарантия свежести от прямых поставщиков</p>
+            </div>
+        </div>
+    </article>
+
+    <section class="separator">
+        <div></div>
+    </section>
+
+    <article class="reviews">
+        <h2>Отзывы наших клиентов</h2>
+        <div class="reviews-grid">
+            <div class="review-item">
+                <div class="review-content">
+                    <p>"Потрясающий магазин! Заказывала конфеты для детского праздника - все были в восторге. Качество на высшем уровне!"</p>
+                    <div class="review-author">
+                        <span class="author-name">Антонина Яковлева</span>
+                        <span class="review-date">15.03.2025</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-item">
+                <div class="review-content">
+                    <p>"Регулярно покупаю шоколад здесь. Всегда свежий и вкусный. Доставка быстрая, персонал вежливый. Рекомендую!"</p>
+                    <div class="review-author">
+                        <span class="author-name">Тимофей Крицин</span>
+                        <span class="review-date">10.05.2025</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-item">
+                <div class="review-content">
+                    <p>"Открыл для себя сладости из азиатских стран. Теперь это мой любимый магазин! Спасибо за качество!"</p>
+                    <div class="review-author">
+                        <span class="author-name">Илья Хомутов</span>
+                        <span class="review-date">04.09.2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews-buttons">
+            <a href="reviews.html" class="see-all-reviews">Смотреть все отзывы</a>
+            <a href="reviews.html" class="add-review">Оставить отзыв</a>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sweet Island</h3>
+                <p>Остров, где очень сладко</p>
+                <div class="social-links">
+                    <a href="https://vk.com/">VK</a>
+                    <a href="http://instagram.com/">Instagram</a>
+                    <a href="http://telegram.com/">Telegram</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Информация</h4>
+                <ul>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <p>📞 0123-2222-4444</p>
+                <p>✉️ contact@email.com</p>
+                <p>🕒 Ежедневно 9:00-21:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sweet Island</p>
+        </div>
+    </footer>
+    <a href="#" class="back-to-top" title="Наверх">↑</a>
+    <script src="js/theme.js"></script>
+    <script src="js/burger.js"></script>
+</body>
+</html>
